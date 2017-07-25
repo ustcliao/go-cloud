@@ -7,8 +7,8 @@ podTemplate(
             mountPath: '/home/jenkins/dind/'
         )
     ],
-    name: 'taas-go-cloud',
-    label: 'taas-go-cloud',
+    name: 'go-cloud',
+    label: 'go-cloud',
     idleMinutes: 60,
     containers: [
         // jnlp with kubectl
@@ -42,7 +42,7 @@ podTemplate(
         )
     ]
 ) {
-    node('taas-go-cloud') {
+    node('go-cloud') {
         stage('checkout') {
             checkout scm
         }
