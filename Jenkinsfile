@@ -42,7 +42,7 @@ podTemplate(
         )
     ]
 ) {
-    node('taas-ai-serving') {
+    node('taas-go-cloud') {
         stage('checkout') {
             checkout scm
         }
