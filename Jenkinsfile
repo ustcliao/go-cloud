@@ -27,7 +27,7 @@ podTemplate(
             args: '',
             envVars: [
                 containerEnvVar(key: 'GOPATH', value: '/go'),
-                containerEnvVar(key: 'WORKDIR', value: '/go/src/github.com/ustcliao/taas-go-cloud')
+                containerEnvVar(key: 'WORKDIR', value: '/go/src/github.com/ustcliao/go-cloud')
             ]
         ),
         containerTemplate(
